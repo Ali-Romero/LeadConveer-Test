@@ -1,0 +1,14 @@
+mixin header()
+  header.header.border-r-40
+    .header__placeholder(data-header-trigger)
+    .header__wrapper(data-header)
+      .wrapper
+        .header__inner
+          a(href="/").header__logo
+            img(src="images/logo-main.svg" loading="lazy" alt="logo" width="251" height="70")
+          .header__burger
+            +burger-button()
+          .header__links
+            +links()
+          .header__connection
+            +connection()
